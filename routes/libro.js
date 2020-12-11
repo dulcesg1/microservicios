@@ -24,7 +24,7 @@ const Libro= mongoose.model('Libro'); // Referencia el modelo
  // Método para encontrar un libro
  ruta.get('/:id',(req, res)=>{
 
-    Libro.findOne({Id_Autor:req.params.id}).then((libro)=>{
+    Libro.findOne({Id_Libro:req.params.id}).then((libro)=>{
         res.json(libro);
         res.send(libro); // Solo busca un egistro
     }).catch((error)=>{

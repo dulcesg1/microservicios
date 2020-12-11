@@ -6,6 +6,7 @@ var router =express.Router();
 //Conectando con la base de datos
 var mongoose = require('mongoose');
 require('../models/modelAutorLibro');
+
 const AutorLibro = mongoose.model('AutorLibro');// Referencia la modelo
 
 //Métdodo GET me sirve para listar los registros modificado
